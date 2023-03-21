@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		CEFF207329C89A5C00319138 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF207229C89A5C00319138 /* AppDelegate.swift */; };
 		CEFF207529C89A5C00319138 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF207429C89A5C00319138 /* SceneDelegate.swift */; };
-		CEFF207729C89A5C00319138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF207629C89A5C00319138 /* ViewController.swift */; };
+		CEFF207729C89A5C00319138 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF207629C89A5C00319138 /* MainViewController.swift */; };
 		CEFF207A29C89A5C00319138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFF207829C89A5C00319138 /* Main.storyboard */; };
 		CEFF207C29C89A5E00319138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFF207B29C89A5E00319138 /* Assets.xcassets */; };
 		CEFF207F29C89A5E00319138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFF207D29C89A5E00319138 /* LaunchScreen.storyboard */; };
+		CEFF208729C8A54800319138 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF208629C8A54800319138 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEFF206F29C89A5C00319138 /* NetworkingAndModelOfParsingJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingAndModelOfParsingJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFF207229C89A5C00319138 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFF207429C89A5C00319138 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEFF207629C89A5C00319138 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEFF207629C89A5C00319138 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CEFF207929C89A5C00319138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEFF207B29C89A5E00319138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFF207E29C89A5E00319138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CEFF208029C89A5E00319138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFF208029C89A5E00319138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NetworkingAndModelOfParsingJson/App/Info.plist; sourceTree = SOURCE_ROOT; };
+		CEFF208629C8A54800319138 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEF115D829CA08F60072CC0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF208629C8A54800319138 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEF115D929CA090A0072CC0D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF207629C89A5C00319138 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		CEFF206629C89A5C00319138 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +74,40 @@
 		CEFF207129C89A5C00319138 /* NetworkingAndModelOfParsingJson */ = {
 			isa = PBXGroup;
 			children = (
-				CEFF207229C89A5C00319138 /* AppDelegate.swift */,
-				CEFF207429C89A5C00319138 /* SceneDelegate.swift */,
-				CEFF207629C89A5C00319138 /* ViewController.swift */,
-				CEFF207829C89A5C00319138 /* Main.storyboard */,
-				CEFF207B29C89A5E00319138 /* Assets.xcassets */,
-				CEFF207D29C89A5E00319138 /* LaunchScreen.storyboard */,
-				CEFF208029C89A5E00319138 /* Info.plist */,
+				CEFF208929C8A57000319138 /* App */,
+				CEF115D829CA08F60072CC0D /* Model */,
+				CEF115D929CA090A0072CC0D /* ViewControllers */,
+				CEFF208A29C8A59500319138 /* Storyboards */,
+				CEFF208829C8A55D00319138 /* Resources */,
 			);
 			path = NetworkingAndModelOfParsingJson;
+			sourceTree = "<group>";
+		};
+		CEFF208829C8A55D00319138 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF207B29C89A5E00319138 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEFF208929C8A57000319138 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF208029C89A5E00319138 /* Info.plist */,
+				CEFF207229C89A5C00319138 /* AppDelegate.swift */,
+				CEFF207429C89A5C00319138 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEFF208A29C8A59500319138 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF207829C89A5C00319138 /* Main.storyboard */,
+				CEFF207D29C89A5E00319138 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFF207729C89A5C00319138 /* ViewController.swift in Sources */,
+				CEFF207729C89A5C00319138 /* MainViewController.swift in Sources */,
 				CEFF207329C89A5C00319138 /* AppDelegate.swift in Sources */,
 				CEFF207529C89A5C00319138 /* SceneDelegate.swift in Sources */,
+				CEFF208729C8A54800319138 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkingAndModelOfParsingJson/Info.plist;
+				INFOPLIST_FILE = NetworkingAndModelOfParsingJson/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkingAndModelOfParsingJson/Info.plist;
+				INFOPLIST_FILE = NetworkingAndModelOfParsingJson/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
